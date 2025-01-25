@@ -1,0 +1,111 @@
+<html>
+ <head>
+  <title>
+   Payment Gateway
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+ </head>
+ <body class="bg-white">
+  <div class="max-w-md mx-auto bg-white shadow-md rounded-lg">
+   <!-- Header -->
+   <div class="bg-green-200 p-4 flex items-center">
+    <i class="fas fa-arrow-left text-black mr-2">
+    </i>
+    <h1 class="text-black text-lg font-semibold">
+     Payment Gateway
+    </h1>
+   </div>
+   <!-- Order Total -->
+   <div class="p-4">
+    <div class="flex justify-between items-center mb-4">
+     <span class="text-black text-lg">
+      Order Total
+     </span>
+     <span class="text-black text-lg">
+      Rs 330
+     </span>
+    </div>
+    <button class="bg-green-200 text-black py-2 px-4 rounded-full w-full" onclick="document.location='Page 12- Cart.html'">
+     View order details
+    </button>
+   </div>
+   <!-- Delivery Address -->
+   <div class="p-4">
+    <label class="block text-black text-lg mb-2">
+     Delivery Address:
+    </label>
+    <textarea class="w-full p-2 bg-green-100 rounded-md" placeholder="Write Here..." rows="4"></textarea>
+   </div>
+   <!-- Payment Methods -->
+   <div class="p-4">
+    <h2 class="text-black text-lg mb-4">
+     Payment Methods
+    </h2>
+    <div class="flex items-center bg-green-100 p-2 rounded-md mb-2">
+     <input class="mr-2" type="checkbox"/>
+     <span class="text-black text-lg">
+      Cash On Delivery
+     </span>
+     <img alt="Cash On Delivery Icon" class="ml-auto" height="24" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnxErif6Rfh_X6_B927qjbeWXB_95v1jaLjw&s" width="24"/>
+    </div>
+    <div class="flex items-center bg-green-100 p-2 rounded-md mb-2">
+     <input class="mr-2" type="checkbox"/>
+     <span class="text-black text-lg">
+      UPI/Net Banking
+     </span>
+     <img alt="UPI/Net Banking Icon" class="ml-auto" height="24" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/UPI-Logo-vector.svg/2560px-UPI-Logo-vector.svg.png" width="24"/>
+    </div>
+    <div class="flex items-center bg-green-100 p-2 rounded-md mb-2">
+     <input class="mr-2" type="checkbox"/>
+     <span class="text-black text-lg">
+      Credit/Debit card
+     </span>
+     <img alt="Credit/Debit card Icon" class="ml-auto" height="24" src="data:image/png;base64,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" width="24"/>
+    </div>
+   </div>
+   <!-- Confirm Order Button -->
+   <div class="p-4">
+    <button class="bg-green-500 text-white py-2 px-4 rounded-full w-full" onclick="document.location='Page 10- Buyer Home Page.html'" >
+     Confirm Order
+    </button>
+   </div>
+   <!-- Footer Navigation -->
+   <div class="flex justify-around bg-white border-t p-2">
+    <div class="flex flex-col items-center">
+        <a href="Page 1 Signup.html">
+     <i class="fas fa-home text-black">
+     </i>
+     <span class="text-black text-sm">
+      Home
+     </span></a>
+    </div>
+    <div class="flex flex-col items-center">
+        <a href="Page 11- Buyers Search.html">
+     <i class="fas fa-search text-black">
+     </i>
+     <span class="text-black text-sm">
+      Search
+     </span></a>
+    </div>
+    <div class="flex flex-col items-center">
+        <a href="Page 12- Cart.html">
+     <i class="fas fa-shopping-cart text-green-500">
+     </i>
+     <span class="text-green-500 text-sm">
+      Cart
+     </span></a>
+    </div>
+    <div class="flex flex-col items-center">
+        <a href="Page 14- Buyer Profile.html">
+     <i class="fas fa-user text-black">
+     </i>
+     <span class="text-black text-sm">
+      Profile
+     </span></a>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>
